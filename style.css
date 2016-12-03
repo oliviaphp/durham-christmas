@@ -9,17 +9,37 @@ body {
   font-size: 18px;
 }
 
-aside.formalmenu {
+div.formalmenu {
   width: 25%;
   float: right;
-  padding: 100px 80px;
-  font-size: 20px;
+  padding: 20px 30px;
+  font-size: 15px;
+  text-align: center;;
+  font-style: italic;
+}
+
+aside.formalmenu2{
+    color: #b32400;
+    border: 2px solid;
+    border-radius: 25px;
 }
 
 header {
   font-size: 40px;
   text-shadow: 0 0 5px white;
 }
+
+header#fm {
+
+  font-size: 25px;
+  text-shadow: 0 0 5px white;
+}
+
+
+
+h2{font-size: 20px;
+  text-decoration: underline;
+text-align: center;}
 
 li{
   display: inline;
