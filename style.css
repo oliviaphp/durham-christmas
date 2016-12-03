@@ -5,9 +5,17 @@ header {
   font-weight: bold;
 }
 
+
 h2{font-size: 20px;
   text-decoration: underline;
 text-align: center;}
+
+
+h1 {
+
+  font-size: 25px;
+  text-shadow: 0 0 5px white;
+}
 
 body {
   margin: 0;
@@ -32,12 +40,18 @@ aside.formalmenu2{
     border-radius: 25px;
 }
 
-
-header#fm {
-
-  font-size: 25px;
-  text-shadow: 0 0 5px white;
+div.dress{
+      display: flex;   
+    flex-wrap: wrap;
 }
+
+
+img#table {
+  width: 900px;
+  height: 200px;
+  margin: 20px;
+}
+
 
 
 
