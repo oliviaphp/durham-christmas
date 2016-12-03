@@ -1,5 +1,13 @@
-h1{
-  font-family: Oswald;}
+
+header {
+  font-size: 40px;
+  text-shadow: 0 0 5px white;
+  font-weight: bold;
+}
+
+h2{font-size: 20px;
+  text-decoration: underline;
+text-align: center;}
 
 body {
   margin: 0;
@@ -24,10 +32,6 @@ aside.formalmenu2{
     border-radius: 25px;
 }
 
-header {
-  font-size: 40px;
-  text-shadow: 0 0 5px white;
-}
 
 header#fm {
 
@@ -37,9 +41,7 @@ header#fm {
 
 
 
-h2{font-size: 20px;
-  text-decoration: underline;
-text-align: center;}
+
 
 li{
   display: inline;
