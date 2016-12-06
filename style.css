@@ -23,6 +23,7 @@ body {
   line-height: 1.7;
   font-family: "Courier New";
   font-size: 18px;
+  background-color:#C21F1F;
 }
 
 div.formalmenu {
@@ -116,5 +117,3 @@ li{
     left: 1px;
 }
 
-body {background-color:#C21F1F
-}
