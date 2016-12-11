@@ -128,7 +128,7 @@ header nav .login_btn{
     font-size: 16px;
     letter-spacing: 1px;
 
-}
+-}
 
 header nav .login_btn{
     float: right;
@@ -138,8 +138,7 @@ header nav .login_btn{
     background: transparent;
 
     transition: all .1s linear;
-    -webkit-transition: all .1s linear;
-    -moz-transition: all .1s linear;
+    -webkit-transition: all .1s linear;    -moz-transition: all .1s linear;
     -o-transition: all .1s linear;
 }
 
@@ -158,7 +157,7 @@ header nav .login_btn:hover{
 
 
 /*  Hero Section  */
-
+-
 .hero{
     width: 100%;
     height: 800px;
@@ -180,7 +179,7 @@ header nav .login_btn:hover{
 
 .hero .caption h2{
     color: #fff;
-    font-family: "p22 corinthia";
+    font-family: "p22_corinthia";
     font-size: 100px;
     font-weight: lighter;
     margin: 0;
