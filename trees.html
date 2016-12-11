@@ -55,9 +55,29 @@
 As Christmas draws closer, everyone is getting into the festive theme and decorating the city with beautiful trees, lights and displays. Below you will find an interactive map showing the places where we have found some of the prettiest tress and lights around! Click on the icons to find out more!
 </p>
 
+<!--- second map-->
+
+<div id = 'parent2'>
+
+<center><h2> Town Center </h2></center>
+
+<img class = 'map' src = 'images/map2.png' width="700" height="700">
+
+<!-- trigger the modal-->
+<img id="treea" class = 'trees' src="images/center2.jpg" alt = "Tree in town center" width="20" height="20">
+
+<img id="treeb" class = 'trees' src="images/pandora.jpg" alt = "Pandora Display" width="20" height="20">
+
+<img id="treec" class = 'trees' src="images/wreaths.jpg" alt = "Wreaths in Shopping Center" width="20" height="20">
+
+<img id="treed" class = 'trees' src="images/moon.jpg" alt = "Moon Display" width="20" height="20">
+
+</div> <!--- end parent divfor pic placement -->
+
 <!--first map-->
 <div id = 'parent'>
 
+<center><h2> The Science Site </h2></center>
 <img class = 'map' src = 'images/map.png' width="700" height="700">
 
 <!-- trigger the modal-->
@@ -73,22 +93,159 @@ As Christmas draws closer, everyone is getting into the festive theme and decora
 
  <!--- end parent divfor pic placement -->
 
-<!--- second map-->
 
-<div id = 'parent2'>
 
-<img class = 'map' src = 'images/map.png' width="700" height="700">
+<!-- modals for town -->
 
-<!-- trigger the modal-->
-<img id="treea" class = 'trees' src="images/center.jpg" alt = "Tree in town center" width="20" height="20">
+<br>
 
-<img id="tree2" class = 'trees' src="images/West.jpg" alt = "Tree in hall of geography west building" width="20" height="20">
+<!-- The Modal center tree -->
+<div id="market street" class="modal">
 
-<img id="tree3" class = 'trees' src="images/West.jpg" alt = "Tree in hall of geography west building" width="20" height="20">
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('market street').style.display='none'">&times;</span>
 
-<img id="tree4" class = 'trees' src="images/West.jpg" alt = "Tree in hall of geography west building" width="20" height="20">
+   <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img0a" >
 
-</div> <!--- end parent divfor pic placement -->
+    <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+<br>
+
+<script>
+	
+
+	// Get the modal
+var modal = document.getElementById('market street');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('treea');
+
+var modalImg = document.getElementById("img0a");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+</script>
+
+<br>
+
+<!-- The Modal pandora -->
+<div id="pandora modal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('pandora modal').style.display='none'">&times;</span>
+
+   <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img0b" >
+
+    <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+<br>
+
+<script>
+	
+
+	// Get the modal
+var modal = document.getElementById('pandora modal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('treeb');
+
+var modalImg = document.getElementById("img0b");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+</script>
+
+<br>
+
+<!-- The Modal wreaths -->
+<div id="bishop" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('bishop').style.display='none'">&times;</span>
+
+   <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img0c" >
+
+    <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+<br>
+
+<script>
+	
+
+	// Get the modal
+var modal = document.getElementById('bishop');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('treec');
+
+var modalImg = document.getElementById("img0c");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+</script>
+
+<br>
+
+<!-- The Modal moon display -->
+<div id="shop" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('shop').style.display='none'">&times;</span>
+
+   <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img0d" >
+
+    <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+<br>
+
+<script>
+	
+
+	// Get the modal
+var modal = document.getElementById('shop');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('treed');
+
+var modalImg = document.getElementById("img0d");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---modals for science site-->
 
 <br>
 

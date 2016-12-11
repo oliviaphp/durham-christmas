@@ -256,7 +256,10 @@ img.trees {
 
 img.trees:hover {opacity: 0.7;}
 
-divparent {
+
+
+/* map 1*/
+#parent {
   position: relative;
   top: 0;
   left: 0;
@@ -265,10 +268,11 @@ divparent {
   position: relative;
   top: 0;
   left: 0;
-    border-radius: 25px;;
-    padding: 20px; 
-    width: 500px;
-    height: 500px;
+  border-radius: 25px;;
+  border: 3px solid #006bb3;
+  margin: 50px;
+  width: 500px;
+  height: 500px;
   z-index: 0;
 }
 
@@ -289,6 +293,64 @@ divparent {
   left: 270px;
   z-index: 1;
 } 
+
+/* map 2*/
+#parent2 {
+  position: relative;
+  float: right;
+  top: 0;
+  left: 0;
+}
+.map2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  float: right;
+  border-radius: 25px;;
+  border: 3px solid #006bb3;
+  width: 500px;
+  height: 500px;
+  z-index: 0;
+}
+
+/* center*/
+#treea {
+  position: absolute;
+  border-radius: 50%;
+  top: 180px;
+  left: 240px;
+  z-index: 1;
+}
+
+/* pandora*/
+#treeb {
+  position: absolute;
+  border-radius: 50%;
+  top: 400px;
+  left: 320px;
+  z-index: 1;
+} 
+/* wreaths*/
+#treec {
+  position: absolute;
+  border-radius: 50%;
+  top: 310px;
+  left: 480px;
+  z-index: 1;
+}
+
+/* moon*/
+#treed {
+  position: absolute;
+  border-radius: 50%;
+  top: 300px;
+  left: 270px;
+  z-index: 1;
+} 
+
+
+
+
 
 /* The Modal (background) */
 .modal {
