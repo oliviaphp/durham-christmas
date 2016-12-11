@@ -13,11 +13,16 @@
 
 	
 	<header> Spectacular Christmas Trees around Durham</header>
+<div id = 'parent'>
+<img class = 'map' src = 'images/map.png' width="700" height="700">
 
 <!-- trigger the modal-->
-<img id="tree" src="images/rochester.jpg" alt = "Tree at reception of Rochester Building" width="30" height="20">
+<img id="tree" class = 'trees' src="images/rochester.jpg" alt = "Tree at reception of Rochester Building" width="30" height="20">
+
+<img id="tree2" class = 'trees' src="images/West.jpg" alt = "Tree in hall of geography west building" width="30" height="20">
+
+<div> <!--- end parent divfor pic placement -->
 <br>
-<img id="tree2" src="images/West.jpg" alt = "Tree in hall of geography west building" width="30" height="20">
 
 <!-- The Modal -->
 <div id="Rochester" class="modal">
@@ -31,9 +36,14 @@
     <!-- Modal Caption (Image Text) -->
   <div id="caption"></div>
 </div>
+<br>
+
+
 
 <script>
-// Get the modal
+	
+
+	// Get the modal
 var modal = document.getElementById('Rochester');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -45,10 +55,31 @@ img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
+}
+</script>
 
+
+
+
+
+<div id="geog" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('geog').style.display='none'">&times;</span>
+
+   <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img02" >
+
+    <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<script>
+
+var modal = document.getElementById('geog')
 
 var img = document.getElementById('tree2');
-var modalImg = document.getElementById("img01");
+var modalImg = document.getElementById("img02");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
     modal.style.display = "block";
