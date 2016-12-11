@@ -242,6 +242,10 @@ img#table {
   margin: 20px;
 }
 
+div.marketsheader{
+    padding: 25px;
+}
+
 div.marketspara {
     width: 45%;
     float: right;
