@@ -41,11 +41,6 @@
 
 
 
-
-
-
-
-
 /*  General CSS  */
 body{
     background: #fff;
@@ -71,11 +66,6 @@ body{
 .clearfix {  
     *zoom: 1;  
 }
-
-
-
-
-
 
 
 
@@ -151,10 +141,6 @@ header nav .login_btn:hover{
 
 
 
-
-
-
-
 /*  Hero Section  */
 
 .hero{
@@ -213,6 +199,19 @@ body {
   font-family: "lato-regular";
   font-size: 18px;
   background-color:#d6ebf2;
+}
+
+/* Markets Page */
+
+div.marketsheader{
+    padding: 0px;
+    margin: 0px;
+}
+
+div.marketspara {
+    width: 45%;
+    float: right;
+    padding: 20px 30px;
 }
 
 /* Formals page */
@@ -341,15 +340,9 @@ divparent {
     font-weight: bold;
     transition: 0.3s;
 =======
-div.marketsheader{
-    padding: 0px;
-    margin: 0px;
-}
 
-div.marketspara {
-    width: 45%;
-    float: right;
-    padding: 20px 30px;
+    
+
 >>>>>>> origin/master
 }
 
