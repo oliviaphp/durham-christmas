@@ -2,7 +2,7 @@
 
 <head>
 	<title>Winter Balls</title>
-<link rel="stylesheet" href="style.css" type="text/css" />	
+<link rel="stylesheet" href="style.css" type="text/css" >	
 
 </head>
 
@@ -42,9 +42,57 @@
 <img src="christmas-mistletoe.png">
 	</div>
 	
-	<center><header style="font-size:60px;color:white;font-family:p22_corinthia"> Winter Balls</header></center>
+	<center><header class = 'title'> Winter Balls</header></center>
 
 	<section class="intro">
-		Here in Durham, most colleges have an annual christmas ball. Each ball has a diverse range of food and entertainment, and so dressing up for these events with your friends is the perfect way to get into the christmas spirit!
+		Here in Durham, most colleges, clubs and societies have an annual ball. Each ball has a diverse range of food and entertainment, and so dressing up for these events with your friends is the perfect way to get into the christmas spirit! Here are some of our top rated winter balls...
+
 	</section>
+
+	<div id = 'lawball' class = 'balls'>
+
+		<p id = 'law'>The biggest ball of the season has to be the Law Society annual ball. With beautiful table decorations, fantastic food, and awesome rides after the event, this sure is not one to miss out on!</p>
+		
+
+	<div class = 'slides'>
+
+		<!-- images for slideshow-->
+		<img class="mySlides" src='images/lawtree.jpg'>
+		<img class="mySlides" src='images/lawdec.jpg'>
+		<img class="mySlides" src='images/lawroom.jpg'>
+		<img class="mySlides" src='images/lawtree2.jpg'>
+		<img class="mySlides" src='images/lawrides.jpg'>
+
+		<!-- buttons -->
+		<a class="w3-btn-floating-w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+		<a class="w3-btn-floating-w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
+
+		<script>
+
+		// makes index for slides
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		//makes buttons change index
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		//pulls picture with that index from other pics
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+		</script>
+
+	</div> <!-- ends slide section -->
+
+
+	</div>
 </body>
