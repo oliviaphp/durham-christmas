@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Trees and Lights in Durham </title>
 
@@ -49,7 +50,7 @@
 	
 	<center><header class = 'title'> Christmas Trees and Lights around Durham</header></center>
 
-<div>
+<div class = 'container'>
 
 <section class = 'intro'>
 As Christmas draws closer, everyone is getting into the festive theme and decorating the city with beautiful trees, lights and displays. Below you will find an interactive map showing the places where we have found some of the prettiest tress and lights around! Click on the icons to find out more!
@@ -57,9 +58,9 @@ As Christmas draws closer, everyone is getting into the festive theme and decora
 
 <!--- second map-->
 
-<div id = 'parent2'>
+<div class = 'col-md-6' id = 'parent2'>
 
-<center><h2> Town Center </h2></center>
+<center><h4> Town Center </h4></center>
 
 <img class = 'map' src = 'images/map2.png' width="700" height="700">
 
@@ -75,9 +76,9 @@ As Christmas draws closer, everyone is getting into the festive theme and decora
 </div> <!--- end parent divfor pic placement -->
 
 <!--first map-->
-<div id = 'parent'>
+<div class = 'col-md-6'  id = 'parent'>
 
-<center><h2> The Science Site </h2></center>
+<center><h4> The Science Site </h4></center>
 <img class = 'map' src = 'images/map.png' width="700" height="700">
 
 <!-- trigger the modal-->
@@ -110,7 +111,7 @@ As Christmas draws closer, everyone is getting into the festive theme and decora
 
     <!-- Modal Caption (Image Text) -->
   <div id="caption"></div>
-</div>
+</div> 
 <br>
 
 <script>
@@ -321,7 +322,7 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 </script>
-
+ </div>
 
 </body>
 
