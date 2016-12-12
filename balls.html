@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lan = 'en'>
 
 <head>
 	<title>Winter Balls</title>
@@ -41,58 +42,64 @@
 <div class="mistletoe">
 <img src="christmas-mistletoe.png">
 	</div>
+
+	
 	
 	<center><header class = 'title'> Winter Balls</header></center>
 
 	<section class="intro">
 		Here in Durham, most colleges, clubs and societies have an annual ball. Each ball has a diverse range of food and entertainment, and so dressing up for these events with your friends is the perfect way to get into the christmas spirit! Here are some of our top rated winter balls...
-
 	</section>
+<div class = 'container-fluid'>
+	<div class= 'row'>
+		<div  class = 'col-md-8'>
+				<h4> Law Ball</h4>
+				<p>The biggest ball of the season has to be the Law Society annual ball. With beautiful table decorations, fantastic food, and awesome rides after the event, this sure is not one to miss out on!</p>
+		</div>
 
-	<div id = 'lawball' class = 'balls'>
+		<div class = 'col-md-4'>
 
-		<p id = 'law'>The biggest ball of the season has to be the Law Society annual ball. With beautiful table decorations, fantastic food, and awesome rides after the event, this sure is not one to miss out on!</p>
-		
+			<!-- images for slideshow-->
+			<img class="mySlides" src='images/lawtree.jpg' style = 'width:30%'>
+			<img class="mySlides" src='images/lawdec.jpg' style = 'width:30%'>
+			<img class="mySlides" src='images/lawroom.jpg' style = 'width:30%'>
+			<img class="mySlides" src='images/lawtree2.jpg' style = 'width:30%'>
+			<img class="mySlides" src='images/lawrides.jpg' style = 'width:30%'>
 
-	<div class = 'slides'>
+			<!-- buttons -->
+			<a id= 'button' class="w3-btn-floating-w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+			<a id = 'button' class="w3-btn-floating-w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
 
-		<!-- images for slideshow-->
-		<img class="mySlides" src='images/lawtree.jpg'>
-		<img class="mySlides" src='images/lawdec.jpg'>
-		<img class="mySlides" src='images/lawroom.jpg'>
-		<img class="mySlides" src='images/lawtree2.jpg'>
-		<img class="mySlides" src='images/lawrides.jpg'>
+			<script>
 
-		<!-- buttons -->
-		<a class="w3-btn-floating-w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-		<a class="w3-btn-floating-w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
+			// makes index for slides
+			var slideIndex = 1;
+			showDivs(slideIndex);
 
-		<script>
+			//makes buttons change index
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
 
-		// makes index for slides
-		var slideIndex = 1;
-		showDivs(slideIndex);
+			//pulls picture with that index from other pics
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+			     x[i].style.display = "none";  
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+			</script>
 
-		//makes buttons change index
-		function plusDivs(n) {
-		  showDivs(slideIndex += n);
-		}
-
-		//pulls picture with that index from other pics
-		function showDivs(n) {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  if (n > x.length) {slideIndex = 1}    
-		  if (n < 1) {slideIndex = x.length}
-		  for (i = 0; i < x.length; i++) {
-		     x[i].style.display = "none";  
-		  }
-		  x[slideIndex-1].style.display = "block";  
-		}
-		</script>
-
-	</div> <!-- ends slide section -->
+		</div> <!-- ends slide section -->
 
 
-	</div>
+	</div><!-- end row-->
+
+	</div><!-- end conatiner-->
+
 </body>
+</html>

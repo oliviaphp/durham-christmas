@@ -143,6 +143,14 @@ header.title {
   background-color: lightblue;
 }
 
+h4 {
+    font-size:50px;
+  color:white;
+  font-family:p22_corinthia;
+  padding: 0;
+  line-height: 10px;
+}
+
 section.intro {
   margin: 50px;
 }
@@ -272,6 +280,7 @@ img.trees:hover {opacity: 0.7;}
   position: relative;
   top: 0;
   left: 0;
+  padding: 0;
 }
 .map {
   position: relative;
@@ -309,6 +318,7 @@ img.trees:hover {opacity: 0.7;}
   float: right;
   top: 0;
   left: 0;
+  padding: 0;
 }
 .map2 {
   position: relative;
@@ -320,6 +330,7 @@ img.trees:hover {opacity: 0.7;}
   width: 500px;
   height: 500px;
   z-index: 0;
+  padding-top: 0;
 }
 
 /* center*/
@@ -431,9 +442,6 @@ img.trees:hover {opacity: 0.7;}
     }
 }
 
-
-/* balls section*/
-
 .mySlides{
   position:relative;
   width: 10px;
@@ -441,7 +449,7 @@ img.trees:hover {opacity: 0.7;}
   z-index: 0;
 }
 
-.w3-btn-floating-w3-display-left{
+#button{
   position: absolute;
   z-index: 1;
   border-radius: 50%;
@@ -451,8 +459,11 @@ img.trees:hover {opacity: 0.7;}
 
 }
 
-.law{float:right;
-font-color:green;}
+#law { 
+  width: 70%;
+  float:right;
+  font-size: 500px;
+}
 
 
 ul.a {
