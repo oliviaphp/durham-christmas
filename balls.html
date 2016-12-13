@@ -177,5 +177,65 @@
 
 	</div><!-- end conatiner-->
 
+<br>
+	<!--cuths ball-->	
+<div class = 'container-fluid'>
+	<div class = 'row'>
+
+
+		<div class = "col-md-4">
+
+			<!-- images for slideshow-->
+			<img class="mySlides2" src='images/cuths.jpg' style = 'width:100%'>
+			<img class="mySlides2" src='images/cuthsweets.jpg' style = 'width:100%'>
+			<img class="mySlides2" src='images/cuthdrink.jpg' style = 'width:100%'>
+			<img class="mySlides2" src='images/cuthband.jpg' style = 'width:100%'>
+			<img class="mySlides2" src='images/cuthsdance.jpg' style = 'width:100%'>
+
+		</div><!-- end slides colomn -->
+
+		<div  class = "col-md-8">
+			<h4> Michaelmas Ball (St Cuthberts Society)</h4>
+			<br>
+			<p>In the Michaelmas Term, St Cuthberts Society have their annual Winter Ball, an exciting fun filled evening for all invlolved. With fantastic food, a sweet trolley, live band and much more, this is one event that leaves everybody with a festive cheer! </p>
+
+			<br>
+			<br>
+			<!--buttons-->
+			<a id= 'button' class="w3-btn-floating-w3-display-left" onclick="plusDivs3(-1)">&#10094;</a>
+			<a id = 'button' class="w3-btn-floating-w3-display-right" onclick="plusDivs3(+1)">&#10095;</a>
+		</div> <!-- ends paragraph colomn-->
+
+			<script>
+
+			// makes index for slides
+			var slideIndex = 1;
+			showDivs3(slideIndex);
+
+			//makes buttons change index
+			function plusDivs3(n) {
+			  showDivs3(slideIndex += n);
+			}
+
+			//pulls picture with that index from other pics
+			function showDivs3(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides2");
+			  if (n > x.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+			     x[i].style.display = "none";  
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+			</script>
+
+
+
+	</div><!-- end row-->
+
+	</div><!-- end conatiner-->
+
+
 </body>
 </html>
