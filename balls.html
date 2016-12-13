@@ -3,8 +3,14 @@
 
 <head>
 	<title>Winter Balls</title>
-<link rel="stylesheet" href="style.css" type="text/css" >	
 
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css" >	
 </head>
 
 <body>
@@ -50,39 +56,50 @@
 	<section class="intro">
 		Here in Durham, most colleges, clubs and societies have an annual ball. Each ball has a diverse range of food and entertainment, and so dressing up for these events with your friends is the perfect way to get into the christmas spirit! Here are some of our top rated winter balls...
 	</section>
-<div class = 'container-fluid'>
-	<div class= 'row'>
-		<div  class = 'col-md-8'>
-				<h4> Law Ball</h4>
-				<p>The biggest ball of the season has to be the Law Society annual ball. With beautiful table decorations, fantastic food, and awesome rides after the event, this sure is not one to miss out on!</p>
-		</div>
 
-		<div class = 'col-md-4'>
+
+
+<!--law ball-->	
+<div class = 'container-fluid'>
+	<div class = 'row'>
+
+
+		<div class = "col-md-4">
 
 			<!-- images for slideshow-->
-			<img class="mySlides" src='images/lawtree.jpg' style = 'width:30%'>
-			<img class="mySlides" src='images/lawdec.jpg' style = 'width:30%'>
-			<img class="mySlides" src='images/lawroom.jpg' style = 'width:30%'>
-			<img class="mySlides" src='images/lawtree2.jpg' style = 'width:30%'>
-			<img class="mySlides" src='images/lawrides.jpg' style = 'width:30%'>
+			<img class="mySlides" src='images/lawtree.jpg' style = 'width:100%'>
+			<img class="mySlides" src='images/lawdec.jpg' style = 'width:100%'>
+			<img class="mySlides" src='images/lawroom.jpg' style = 'width:100%'>
+			<img class="mySlides" src='images/lawtree2.jpg' style = 'width:100%'>
+			<img class="mySlides" src='images/lawrides.jpg' style = 'width:100%'>
 
-			<!-- buttons -->
-			<a id= 'button' class="w3-btn-floating-w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-			<a id = 'button' class="w3-btn-floating-w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
+		</div><!-- end slides colomn -->
+
+		<div  class = "col-md-8">
+			<h4> Law Ball</h4>
+			<br>
+			<p>The biggest ball of the season has to be the Law Society annual ball. With beautiful table decorations, fantastic food, and awesome rides after the event, this sure is not one to miss out on!</p>
+
+			<br>
+			<br>
+			<!--buttons-->
+			<a id= 'button' class="w3-btn-floating-w3-display-left" onclick="plusDivs1(-1)">&#10094;</a>
+			<a id = 'button' class="w3-btn-floating-w3-display-right" onclick="plusDivs1(+1)">&#10095;</a>
+		</div> <!-- ends paragraph colomn-->
 
 			<script>
 
 			// makes index for slides
 			var slideIndex = 1;
-			showDivs(slideIndex);
+			showDivs1(slideIndex);
 
 			//makes buttons change index
-			function plusDivs(n) {
-			  showDivs(slideIndex += n);
+			function plusDivs1(n) {
+			  showDivs1(slideIndex += n);
 			}
 
 			//pulls picture with that index from other pics
-			function showDivs(n) {
+			function showDivs1(n) {
 			  var i;
 			  var x = document.getElementsByClassName("mySlides");
 			  if (n > x.length) {slideIndex = 1}    
@@ -94,7 +111,66 @@
 			}
 			</script>
 
-		</div> <!-- ends slide section -->
+
+
+	</div><!-- end row-->
+
+	</div><!-- end conatiner-->
+
+	<br>
+
+	<!--Informal Ball -->
+	<div class = 'container-fluid'>
+	<div class = 'row'>
+
+		<div  class = "col-md-8">
+			<h4> Informal Ball (Grey College)</h4>
+			<br>
+			<p>Informal Ball is a Ball like no other, hosted during the winter term, Grey host one of the biggest events of the year. One special twist that makes this ball spectacular is that it is fancy dress! While it might be great going to all these events in black tie, imagine having dinner dressed as a Power Ranger! This year's theme was 'Forver Young' and there were some super outfits to go with the theme...</p>
+
+			<br>
+			<br>
+			<!--buttons-->
+			<a id= 'button' class="w3-btn-floating-w3-display-left" onclick="plusDivs2(-1)">&#10094;</a>
+			<a id = 'button' class="w3-btn-floating-w3-display-right" onclick="plusDivs2(+1)">&#10095;</a>
+		</div> <!--- end paragraph colomn-->
+
+		<div class = "col-md-4">
+
+			<!-- images for slideshow-->
+			<img class="Slides" src='images/power.jpg' style = 'width:100%'>
+			<img class="Slides" src='images/croc.jpg' style = 'width:100%'>
+			<img class="Slides" src='images/skal.jpg' style = 'width:100%'>
+			<img class="Slides" src='images/tent.jpg' style = 'width:100%'>
+
+		</div><!--- end slides colomn-->
+
+
+
+			<script>
+
+			// makes index for slides
+			var slideIndex = 1;
+			showDivs2(slideIndex);
+
+			//makes buttons change index
+			function plusDivs2(n) {
+			  showDivs2(slideIndex += n);
+			}
+
+			//pulls picture with that index from other pics
+			function showDivs2(n) {
+			  var i;
+			  var x = document.getElementsByClassName("Slides");
+			  if (n > x.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+			     x[i].style.display = "none";  
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+			</script>
+
 
 
 	</div><!-- end row-->
