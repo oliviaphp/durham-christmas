@@ -458,8 +458,10 @@ font-color:green;}
 ul.a {
     list-style-type: circle;
 }
-/*  footer  */
-footer{
+
+    /*  footer  */
+/* Commenting footer
+    footer{
     padding-top: 100px;
     background: #95badf;
 }
@@ -573,4 +575,23 @@ footer .copyrights a.ph_link{
     font-family: "Lato-bold", Helvetica, Arial, sans-serif;
     font-weight: bold;
     text-decoration: none;
+}
+    */
+    footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
 }
