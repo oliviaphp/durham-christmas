@@ -444,6 +444,11 @@ img.trees:hover {opacity: 0.7;}
     }
 }
 
+/*balls page */
+.row{
+  border-top: 3px solid #006bb3; 
+}
+
 .mySlides{
   position:relative;
   width: 10px;
