@@ -459,8 +459,7 @@ ul.a {
     list-style-type: circle;
 }
 
-    /*  footer  */
-/* Commenting footer
+    
     footer{
     padding-top: 100px;
     background: #95badf;
@@ -576,7 +575,8 @@ footer .copyrights a.ph_link{
     font-weight: bold;
     text-decoration: none;
 }
-    */
+   
+    /*Comment Out Footer 
     footer {
   font-size: 12px;
   padding: 20px 0;
@@ -595,3 +595,4 @@ footer li img {
   width: 32px;
   height: 32px;
 }
+*/
