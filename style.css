@@ -523,28 +523,33 @@ ul.a {
 }
 
     
-    footer{
+   
+
+
+
+/*  footer  */
+footer{
     padding-top: 100px;
     background: #95badf;
 }
 
-footer .footer > ul{
+.footer > ul{
     overflow: hidden;
 }
 
-footer .footer > ul > li{
+.footer > ul > li{
     display: block;
     float: left;
     list-style: none;
     margin-right: 60px;
 }
 
-footer .footer > ul > li:last-child{
+.footer > ul > li:last-child{
     margin-right: 0;
 }
 
 
-footer .footer > ul > li.links{
+.footer > ul > li.links{
     width: 197px;
 }
 
@@ -559,7 +564,7 @@ footer ul li.links > ul > li:last-child{
     margin-bottom: 0;
 }
 
-footer .footer > ul > li.links li a{
+.footer > ul > li.links li a{
     text-decoration: none;
     display: block;
     color: #fff;
@@ -568,12 +573,11 @@ footer .footer > ul > li.links li a{
     letter-spacing: .5px;
     text-align: left;
 }
-
-footer .footer > ul > li.about{
+.footer > ul > li.about{
     width: 327px;
 }
 
-footer ul li.about p{
+.about p{
     color: #fff;
     font-family: "lato-regular", Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -582,46 +586,44 @@ footer ul li.about p{
     margin-top: -9px;
 }
 
-footer ul li.about > ul > li{
+.about > ul > li{
     display: inline-block;
     margin-right: 20px;
     margin-top: 30px;
 }
-
-footer ul li.about > ul > li:last-child{
+.about > ul > li:last-child{
     margin-right: 0;
 }
-
-footer ul li.about > ul > li a{
-    background: url('social_media.png') no-repeat;
+.about > ul > li a{
+    background: url('../img/social_media.png') no-repeat;
 }
 
-footer ul li.about > ul > li a.facebook{
+.about > ul > li a.facebook{
     display: block;
     width: 10px;
     height: 18px;
     background-position: 0 0;
 }
-footer ul li.about > ul > li a.twitter{
+.about > ul > li a.twitter{
     display: block;
     width: 19px;
     height: 18px;
     background-position: -11px 0px;
 }
-footer ul li.about > ul > li a.google{
+.about > ul > li a.google{
     display: block;
     width: 10px;
     height: 18px;
     background-position: -31px 0px;
 }
-footer ul li.about > ul > li a.skype{
+.about > ul > li a.skype{
     display: block;
     width: 17px;
     height: 18px;
     background-position: -43px 0px;
 }
 
-footer .copyrights{
+.copyrights{
     display: block;
     text-align: center;
     padding: 40px 0;
@@ -633,7 +635,7 @@ footer .copyrights{
     border-top: 1px solid #82abd4;
 }
 
-footer .copyrights a.ph_link{
+.copyrights a.ph_link{
     font-family: "Lato-bold", Helvetica, Arial, sans-serif;
     font-weight: bold;
     text-decoration: none;
